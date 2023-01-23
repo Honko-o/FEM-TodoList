@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const buttonsContent = ['All', 'Active', 'Completed'];
 
-export const FilterButtons = ({ setFilter }) => {
+export const FilterButtons = ({ setFilter, style }) => {
     const [selectedFilterIndex, setSelectedFilterIndex] = useState(0);
 
     const filterIndexHandler = (index) => setSelectedFilterIndex(index);

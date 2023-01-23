@@ -11,11 +11,15 @@ import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme/Theme';
 import { useEffect } from 'react';
+import { useWindowSize } from './hooks/useWindowSize';
+import { FilterButtons } from './components/Task/FilterButtons/FilterButtons';
+import { TaskFilterStyle } from './components/Task/TaskFilter/TaskFilterStyle';
 
 const App = () => {
     const tasks = useSelector((state) => state.tasks);
     const [themeMode, setThemeMode] = useState('light');
     const [filter, setFilter] = useState('All');
+    const { width: screenWidth } = useWindowSize();
 
     const getTheme = () => {
         return themeMode === 'light' ? lightTheme : darkTheme;
@@ -59,6 +63,16 @@ const App = () => {
                         setFilter={setFilter}
                     />
                 </TasksBodyWrapper>
+                {/* For Screen Changing */}
+                {screenWidth < 600 && (
+                    <TasksBodyWrapper
+                        style={{ fontSize: '1.6rem', gap: '1.6rem' }}
+                    >
+                        <TaskFilterStyle>
+                            <FilterButtons setFilter={setFilter} />
+                        </TaskFilterStyle>
+                    </TasksBodyWrapper>
+                )}
                 <Footer />
             </Container>
         </ThemeProvider>

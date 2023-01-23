@@ -137,6 +137,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: bold;
         flex: 1;
         justify-content: center;
+        background-color: background-color: ${({ theme }) => theme.todobgColor};
     }
     
     .filter-btns button {
