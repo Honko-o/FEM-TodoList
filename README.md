@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Repo](https://github.com/Honko-o/FEM-TodoList)
+-   Live Site URL: [Challenge Live Site](https://honko-o.github.io/FEM-TodoList/)
 
 ### Built with
 
@@ -110,8 +110,6 @@ The item I think it's cool.
 -   [Custom Checkbox](https://moderncss.dev/pure-css-custom-checkbox-style/) - Making Custom Checkbox from scratch.
 
 ## Author
-
--   Website - [Saleh](https://honko-o.github.io/FEM-TodoList/)
 -   Frontend Mentor - [@Honko-o](https://www.frontendmentor.io/profile/Honko-o)
 
 ## Acknowledgments
